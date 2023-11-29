@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container mt-4">
+    <form action="{% url 'reviewapp:new' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="name">Laptop Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="specs">Specifications:</label>
+            <input type="text" class="form-control" id="specs" name="specs" required>
+        </div>
+
+        <div class="form-group">
+            <label for="picss">Upload Image:</label>
+            <input type="file" class="form-control-file" id="picss" name="picss" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Add Review</button>
+    </form>
+</div>
+
+{% endblock %}

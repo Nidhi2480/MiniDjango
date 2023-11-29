@@ -1,0 +1,124 @@
+body {
+    background-image: url('../img/porsche_911_st_2023_car_4k_hd_cars-3840x2160.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    
+  
+    height: 100vh;
+    
+}
+.login-heading {
+    margin-top: 50px;
+    text-align: center; /* Center the text horizontally */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    margin-top: 20px; /* Add margin from the top */
+}
+
+div{
+    margin-top: 35px;
+    background-size: cover;
+}
+/* Login Page (form1) */
+.form1 {
+    opacity: 0.8;
+    max-width: 400px;
+    margin-top: 35px;
+    margin-left: 35%;
+    padding: 20px;
+    background-size: cover;
+    background: #f5f5f5; /* Light background color */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form1 h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form1 input[type="text"],
+.form1 input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Lighter border */
+    border-radius: 5px;
+    background: #fff; /* White background */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s, background-color 0.3s; /* Add transition for focus effect */
+}
+
+.form1 input[type="text"]:focus,
+.form1 input[type="password"]:focus {
+    border-color: #1abc9c; /* Highlighted border color on focus */
+    background: #f0f8ff; /* Light blue background on focus */
+}
+/* Registration Form (form2) */
+.form2 {
+    opacity: 0.8;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5; /* Light background color */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form2 h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form2 input[type="text"],
+.form2 input[type="password"] {
+    width: 100%;
+    height: 3%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Lighter border */
+    border-radius: 5px;
+    background: #fff; /* White background */
+    color: #333; /* Dark text color */
+    /* transition: border-color 0.3s, background-color 0.3s; Add transition for focus effect */
+}
+
+/* .form2 input[type="text"]:focus,
+.form2 input[type="password"]:focus {
+    border-color: #1abc9c; /* Highlighted border color on focus */
+    /*background: #f0f8ff;  Light blue background on focus 
+} */
+
+
+input[type="submit"] {
+    background-color: #3498db; /* Blue button background */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #ff3700; /* Darker blue on hover */
+}
+input[type="button"] {
+    background-color: #ff3700; /* Blue button background */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+input[type="button"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

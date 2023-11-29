@@ -1,0 +1,27 @@
+{% load static %}
+{% for messeges in messages %}
+<h5 class="login-heading">{{messeges}}</h5>
+{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+<link rel="stylesheet" href="{% static 'assets/css/style1.css' %}">
+</head>
+<body>
+  <br><br></br>
+  <h1 class="login-heading">LOGIN</h1>
+  <div>
+        <form class="form1" action ='login' method="POST">
+          {% csrf_token %}
+          <p>username</p><input type=text  id="w" name="username"/>
+          <p>password</p><input type=password id="w" name="password"/>
+          <input type=submit value=login>
+          <a href="register"><input type=button value=register></a>
+        </form>
+ </div>
+
+</body>
+</html>

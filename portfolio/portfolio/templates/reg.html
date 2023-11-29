@@ -1,0 +1,36 @@
+{% load static %}
+{% for messeges in messages %}
+<h5 class="login-heading">{{messeges}}</h5>
+{% endfor %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<link rel="stylesheet" href="{% static 'assets/css/style1.css' %}">
+<body>
+    <h2 class="login-heading">Registration Form</h2>
+    <br>
+    <form class="form2" action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        User Name:
+        <input type="text" name="username" id="first_name" required><br><br>
+
+        First Name:
+        <input type="text" name="first_name" id="first_name" required><br><br>
+        Last Name:
+        <input type="text" name="last_name" id="last_name" required><br><br>
+        email:
+        <input type="text" name="email" id="last_name" required><br><br>
+
+        Password:
+        <input type="password" name="password" id="password" required><br><br>
+
+        re-enter password:
+        <input type="password" name="password2" id="address" required><br><br>
+
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
